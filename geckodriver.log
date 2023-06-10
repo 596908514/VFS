@@ -1,0 +1,474 @@
+1677793543509	geckodriver	INFO	Listening on 127.0.0.1:65466
+1677793546582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65467" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\DiDo\\AppData\\Local\\Temp\\rust_mozprofilehSQnVC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677793549390	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677793549401	Marionette	INFO	Listening on port 65474
+Read port: 65474
+WebDriver BiDi listening on ws://127.0.0.1:65467
+1677793550480	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\DiDo\\AppData\\Local\\Temp\\rust_mozprofilehSQnVC\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65467/devtools/browser/34604add-ba7f-4377-8214-5384214bed49
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1677793582561	Marionette	INFO	Stopped listening on port 65474
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+_checkPendingPings@resource://gre/modules/TelemetrySend.sys.mjs:863:17
+setup@resource://gre/modules/TelemetrySend.sys.mjs:803:18
+setup@resource://gre/modules/TelemetrySend.sys.mjs:241:30
+setupTelemetry/this._delayedInitTask<@resource://gre/modules/TelemetryControllerParent.sys.mjs:829:36
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1686388118023	geckodriver	INFO	Listening on 127.0.0.1:2488
+1686388283544	geckodriver	INFO	Listening on 127.0.0.1:2520
+1686388581764	geckodriver	INFO	Listening on 127.0.0.1:2912
+1686388748692	geckodriver	INFO	Listening on 127.0.0.1:3064
+1686388986341	geckodriver	INFO	Listening on 127.0.0.1:3156
+1686388989385	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "3157" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilexLuVHT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686388989647	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686388989651	Marionette	INFO	Listening on port 3166
+WebDriver BiDi listening on ws://127.0.0.1:3157
+Read port: 3166
+1686388989748	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:3157/devtools/browser/4e9419a4-5ecb-437a-a93c-aadd858aa729
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 599))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686389030221	Marionette	INFO	Stopped listening on port 3166
+Dynamically enable window occlusion 1
+1686389034987	geckodriver	INFO	Listening on 127.0.0.1:3238
+1686389038035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "3239" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileSRkmUz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686389038354	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686389038357	Marionette	INFO	Listening on port 3247
+WebDriver BiDi listening on ws://127.0.0.1:3239
+Read port: 3247
+1686389038550	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:3239/devtools/browser/5a57d0b8-800b-414c-939c-82762911b1c8
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 599))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686389209099	Marionette	INFO	Stopped listening on port 3247
+Dynamically enable window occlusion 1
+1686389439798	geckodriver	INFO	Listening on 127.0.0.1:3450
+1686389442860	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "3451" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileN47Gcx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686389443161	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686389443165	Marionette	INFO	Listening on port 3458
+Read port: 3458
+WebDriver BiDi listening on ws://127.0.0.1:3451
+1686389443248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:3451/devtools/browser/ece3e125-6108-41d2-8f6d-c0494d66063c
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1686389617576	Marionette	INFO	Stopped listening on port 3458
+Dynamically enable window occlusion 1
+1686389985502	geckodriver	INFO	Listening on 127.0.0.1:4187
+1686389988531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "4188" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileMGwuoD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686389988812	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686389988816	Marionette	INFO	Listening on port 4197
+Read port: 4197
+WebDriver BiDi listening on ws://127.0.0.1:4188
+1686389988915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:4188/devtools/browser/f62834e7-cb8a-4010-ba5f-36f9d58dfd86
+1686390013360	Marionette	INFO	Stopped listening on port 4197
+Dynamically enable window occlusion 1
+1686390959694	geckodriver	INFO	Listening on 127.0.0.1:5088
+1686390962755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5089" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofiles3dZA9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686390963031	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686390963035	Marionette	INFO	Listening on port 5098
+Read port: 5098
+WebDriver BiDi listening on ws://127.0.0.1:5089
+1686390963149	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5089/devtools/browser/8cca9c52-9583-47b1-9e1f-797dc09c09fa
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686391018028	Marionette	INFO	Stopped listening on port 5098
+Dynamically enable window occlusion 1
+1686391048893	geckodriver	INFO	Listening on 127.0.0.1:5211
+1686391051951	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5212" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileF6stq4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686391052203	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686391052206	Marionette	INFO	Listening on port 5222
+WebDriver BiDi listening on ws://127.0.0.1:5212
+Read port: 5222
+1686391052397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5212/devtools/browser/90b39302-1521-4308-914a-6cbd5984fbee
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686391110779	Marionette	INFO	Stopped listening on port 5222
+Dynamically enable window occlusion 1
+1686391537042	geckodriver	INFO	Listening on 127.0.0.1:5511
+1686391540099	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5512" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileCQKqQ8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686391540345	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686391540349	Marionette	INFO	Listening on port 5519
+WebDriver BiDi listening on ws://127.0.0.1:5512
+Read port: 5519
+1686391540559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5512/devtools/browser/2baa3ac2-e3d5-4895-b748-e205d78c77db
+1686391594780	Marionette	INFO	Stopped listening on port 5519
+Dynamically enable window occlusion 1
+1686391623478	geckodriver	INFO	Listening on 127.0.0.1:5592
+1686391626546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5593" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilevl2php"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686391626863	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686391626866	Marionette	INFO	Listening on port 5600
+Read port: 5600
+WebDriver BiDi listening on ws://127.0.0.1:5593
+1686391626951	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5593/devtools/browser/dcda0047-b756-4e9b-9723-2135ad6646d6
+1686391660530	Marionette	INFO	Stopped listening on port 5600
+Dynamically enable window occlusion 1
+1686391721160	geckodriver	INFO	Listening on 127.0.0.1:5783
+1686391724215	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5784" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileDcclhq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686391724576	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686391724579	Marionette	INFO	Listening on port 5791
+WebDriver BiDi listening on ws://127.0.0.1:5784
+Read port: 5791
+1686391724770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5784/devtools/browser/433cd897-0aa2-4781-a7b8-1ede574c916c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1686391845268	Marionette	INFO	Stopped listening on port 5791
+Dynamically enable window occlusion 1
+1686391846748	geckodriver	INFO	Listening on 127.0.0.1:5886
+1686391849817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "5887" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilehSeKDq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686391850096	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686391850100	Marionette	INFO	Listening on port 5894
+Read port: 5894
+WebDriver BiDi listening on ws://127.0.0.1:5887
+1686391850209	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:5887/devtools/browser/ed38d86e-454b-4629-8b6e-3444f3cad0e7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686391894053	Marionette	INFO	Stopped listening on port 5894
+Dynamically enable window occlusion 1
+1686392312562	geckodriver	INFO	Listening on 127.0.0.1:6142
+1686392315628	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6143" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilebo337B"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392315888	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392315892	Marionette	INFO	Listening on port 6150
+Read port: 6150
+WebDriver BiDi listening on ws://127.0.0.1:6143
+1686392316001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6143/devtools/browser/ae1aac94-7768-43a4-9a44-7ccd3f239bd5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686392368448	Marionette	INFO	Stopped listening on port 6150
+Dynamically enable window occlusion 1
+1686392400746	geckodriver	INFO	Listening on 127.0.0.1:6253
+1686392403794	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6254" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileW5skT9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392404065	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392404070	Marionette	INFO	Listening on port 6264
+Read port: 6264
+WebDriver BiDi listening on ws://127.0.0.1:6254
+1686392404164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6254/devtools/browser/9254dd60-e55f-4302-be7b-81ef74d669f4
+1686392412271	Marionette	INFO	Stopped listening on port 6264
+Dynamically enable window occlusion 1
+[Parent 26920, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787
+1686392424365	geckodriver	INFO	Listening on 127.0.0.1:6328
+1686392481794	geckodriver	INFO	Listening on 127.0.0.1:6337
+1686392484874	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6338" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileS77kqb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392485186	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392485190	Marionette	INFO	Listening on port 6347
+Read port: 6347
+WebDriver BiDi listening on ws://127.0.0.1:6338
+1686392485267	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6338/devtools/browser/1db77df3-1095-40a7-b39d-d2f495e0646e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686392540663	Marionette	INFO	Stopped listening on port 6347
+Dynamically enable window occlusion 1
+1686392541373	geckodriver	INFO	Listening on 127.0.0.1:6439
+1686392544428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6440" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilel4usjK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392544700	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392544704	Marionette	INFO	Listening on port 6447
+WebDriver BiDi listening on ws://127.0.0.1:6440
+Read port: 6447
+1686392544869	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6440/devtools/browser/2f040cab-efbe-4516-a1a6-95997419e06e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686392594090	Marionette	INFO	Stopped listening on port 6447
+Dynamically enable window occlusion 1
+1686392691835	geckodriver	INFO	Listening on 127.0.0.1:6572
+1686392694878	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6573" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofile8rbuzk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392695206	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392695210	Marionette	INFO	Listening on port 6580
+Read port: 6580
+WebDriver BiDi listening on ws://127.0.0.1:6573
+1686392695303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6573/devtools/browser/b90fa4dd-cd81-45ec-9d00-60bf7635cd2d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686392810305	Marionette	INFO	Stopped listening on port 6580
+Dynamically enable window occlusion 1
+1686392842669	geckodriver	INFO	Listening on 127.0.0.1:6680
+1686392845729	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6681" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilebOI6eC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686392846043	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686392846048	Marionette	INFO	Listening on port 6690
+Read port: 6690
+WebDriver BiDi listening on ws://127.0.0.1:6681
+1686392846157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6681/devtools/browser/84f20b0f-cb40-43fa-bc01-ab389e459fc6
+1686392851568	Marionette	INFO	Stopped listening on port 6690
+Dynamically enable window occlusion 1
+1686393266724	geckodriver	INFO	Listening on 127.0.0.1:6781
+1686393269803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6782" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilePMZRm6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686393270081	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686393270085	Marionette	INFO	Listening on port 6789
+Read port: 6789
+WebDriver BiDi listening on ws://127.0.0.1:6782
+1686393270165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6782/devtools/browser/75f4f002-1e66-45ec-984f-edba237e7768
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686393314267	Marionette	INFO	Stopped listening on port 6789
+Dynamically enable window occlusion 1
+1686393345663	geckodriver	INFO	Listening on 127.0.0.1:6874
+1686393348711	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "6875" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilemalCKr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686393349038	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686393349042	Marionette	INFO	Listening on port 6882
+Read port: 6882
+WebDriver BiDi listening on ws://127.0.0.1:6875
+1686393349166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:6875/devtools/browser/c55501fd-081b-45ee-a3c6-da221b58f418
+1686393352375	Marionette	INFO	Stopped listening on port 6882
+Dynamically enable window occlusion 1
+1686394239655	geckodriver	INFO	Listening on 127.0.0.1:7647
+1686394242704	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "7648" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofilezagU45"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686394242999	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686394243003	Marionette	INFO	Listening on port 7655
+Read port: 7655
+WebDriver BiDi listening on ws://127.0.0.1:7648
+1686394243085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:7648/devtools/browser/1617a9cc-227b-4d50-8ee9-ad6227b7a905
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686394509542	Marionette	INFO	Stopped listening on port 7655
+Dynamically enable window occlusion 1
+1686395243168	geckodriver	INFO	Listening on 127.0.0.1:8475
+1686395246270	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8476" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileTCbzS2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686395246572	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686395246575	Marionette	INFO	Listening on port 8484
+Read port: 8484
+WebDriver BiDi listening on ws://127.0.0.1:8476
+1686395246660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:8476/devtools/browser/314905c5-78cb-4285-8bd5-769211f32eb2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686395714719	Marionette	INFO	Stopped listening on port 8484
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "8666" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileS8Szkr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686395524857	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686395524861	Marionette	INFO	Listening on port 8673
+Read port: 8673
+WebDriver BiDi listening on ws://127.0.0.1:8666
+1686395524949	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:8666/devtools/browser/bc5802c3-bbb6-48e6-b29c-1480799afbe1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686395715937	Marionette	INFO	Stopped listening on port 8673
+Dynamically enable window occlusion 1
+1686396509632	geckodriver	INFO	Listening on 127.0.0.1:9781
+1686396512686	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "9782" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileY6rzsJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686396512990	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686396512994	Marionette	INFO	Listening on port 9794
+Read port: 9794
+WebDriver BiDi listening on ws://127.0.0.1:9782
+1686396513089	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:9782/devtools/browser/829ec749-d44d-46ea-8c04-32686a381cf4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686397078789	Marionette	INFO	Stopped listening on port 9794
+Dynamically enable window occlusion 1
+1686397490887	geckodriver	INFO	Listening on 127.0.0.1:10817
+1686397493928	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "10818" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileyMMfNd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686397494185	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686397494189	Marionette	INFO	Listening on port 10827
+WebDriver BiDi listening on ws://127.0.0.1:10818
+Read port: 10827
+1686397494324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:10818/devtools/browser/401304f8-f99a-4fb9-90fb-c1c822fe27cd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
+1686397537772	Marionette	INFO	Stopped listening on port 10827
+Dynamically enable window occlusion 1
+1686398441864	geckodriver	INFO	Listening on 127.0.0.1:12841
+1686398444870	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "12842" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\潘克豪\\AppData\\Local\\Temp\\rust_mozprofileTVjPLm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1686398445187	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1686398445191	Marionette	INFO	Listening on port 12849
+Read port: 12849
+WebDriver BiDi listening on ws://127.0.0.1:12842
+1686398445300	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:12842/devtools/browser/14c805b0-5c9d-4cc0-9662-3cd5d234963f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://visa.vfsglobal.com."
