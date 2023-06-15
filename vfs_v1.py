@@ -8,7 +8,7 @@ from selenium.webdriver.firefox.options import Options as f_Options
 from selenium.webdriver.chrome.service import Service as c_Service
 from selenium.webdriver.firefox.service import Service as f_Service
 
-from utils import log_msg, get_data_array, update
+from utils import log_msg, get_data_array, update, getrandom, csv_to_html
 import time
 import smtplib
 from email.header import Header
@@ -30,9 +30,9 @@ def mail(to, message):
     mail_license = args.token
     mail_receivers = to
     smtp_port = args.port
-    msg = MIMEMultipart('related')
+    msg = MIMEMultipart('alternative')
     # 邮件主题
-    subject_content = 'VFS-APPOINTMENT'
+    subject_content = message
     # 设置发送者,注意严格遵守格式,里面邮箱为发件人邮箱
     msg["From"] = Header(mail_sender)
     # 设置接受者,注意严格遵守格式,里面邮箱为接受者邮箱
@@ -46,6 +46,11 @@ def mail(to, message):
     message_text = MIMEText(body_content,"plain","utf-8")
     # 向MIMEMultipart对象中添加文本对象
     msg.attach(message_text)
+
+    mail_body = open(csv_to_html(), 'r').read()
+    message_html = MIMEText(mail_body, 'html', 'utf-8')
+    msg.attach(message_html)
+
 
     # 创建SMTP对象
     stp = smtplib.SMTP()
@@ -62,7 +67,7 @@ def mail(to, message):
 def login(log, browser, wait):
     # Login Page
     browser.get('https://visa.vfsglobal.com/chn/zh/ita/login')
-    time.sleep(10)
+    time.sleep(getrandom()+3)
 
     # 点击接受cookie
     browser.find_element(By.ID, "onetrust-accept-btn-handler").click()
@@ -88,7 +93,7 @@ def login(log, browser, wait):
         mail(to=args.sendtoerror, message='your account is locked!')
         return False
 
-    time.sleep(5)
+    time.sleep(getrandom()+5)
     return True
 
 
@@ -100,44 +105,50 @@ def appointment(log, browser, wait):
     
     # 点击 新的预约
     wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='mat-focus-indicator btn mat-btn-lg btn-brand-orange d-none d-lg-inline-block position-absolute top-n3 right-0 z-index-999 mat-raised-button mat-button-base']"))).click()
-    time.sleep(6)
+    time.sleep(getrandom())
     
     data_np = get_data_array('data.csv')
     while True:
         for rowindex in np.arange(data_np.shape[0]):
             # 选择第一个选项
             if browser.find_element(By.ID, 'mat-select-value-1').text != data_np[rowindex][0]:
-                wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-0']"))).click() 
+                browser.find_element(By.XPATH, "//mat-select[@id='mat-select-0']").click()
+                # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-0']"))).click()
+                time.sleep(1)
                 options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
                 for element in options:
                     my_str = element.text
                     if data_np[rowindex][0] == my_str:
                         element.click()
                         break           
-                time.sleep(5)
-            
+                time.sleep(getrandom())
+            time.sleep(0.5)
             # 选择第二个选项
             if browser.find_element(By.ID, 'mat-select-value-3').text != data_np[rowindex][1]:
-                wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-2']"))).click() 
+                browser.find_element(By.XPATH, "//mat-select[@id='mat-select-2']").click()
+                # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-2']"))).click() 
+                time.sleep(1)
                 options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
                 for element in options:
                     my_str = element.text
                     if data_np[rowindex][1] == my_str:
                         element.click()
                         break           
-                time.sleep(5)
-
+                time.sleep(getrandom())
+            time.sleep(0.5)
             # 选择第三个选项
             if browser.find_element(By.ID, 'mat-select-value-5').text != data_np[rowindex][2]:
-                wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-4']"))).click() 
+                browser.find_element(By.XPATH, "//mat-select[@id='mat-select-4']").click()
+                # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-4']"))).click()
+                time.sleep(1)
                 options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
                 for element in options:
                     my_str = element.text
                     if data_np[rowindex][2] == my_str:
                         element.click()
                         break
-                time.sleep(5)  
-
+                time.sleep(getrandom())  
+            time.sleep(0.5)
             # 判断有无可以预约时间，没有则继续循环
             text = browser.find_element(By.XPATH, "//div[@class='alert alert-info border-0 rounded-0']").text
             if text != data_np[rowindex][3]:
@@ -150,12 +161,12 @@ def appointment(log, browser, wait):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--browser', type=str, default='firefox') # 游览器
+    parser.add_argument('--browser', type=str, default='chrome') # 游览器
     parser.add_argument('--vfs_account', type=str, default='1340330258@qq.com') # vfs登陆账号
     parser.add_argument('--vfs_pw', type=str, default='Panyixi0824@') # vfs 登陆密码
     parser.add_argument('--mail_id', type=str, default='596908514@qq.com') # stmp邮箱
     parser.add_argument('--token', type=str, default='kgtfmommembqbfai') # stmp 密钥
-    parser.add_argument('--sendto', type=list, default=['596908514@qq.com', '1340330258@qq.com'])
+    parser.add_argument('--sendto', type=list, default=['596908514@qq.com', '1340330258@qq.com', 'mm328@qq.com', '421175261@qq.com'])
     parser.add_argument('--sendtoerror', type=str, default='596908514@qq.com')
     parser.add_argument('--mail_host', type=str, default='smtp.qq.com')
     parser.add_argument('--port', type=int, default=587)
@@ -172,9 +183,11 @@ if __name__ == '__main__':
         # proxy = random.choice(proxy_arr)
         # print(proxy)
         # options.add_argument(proxy)
-        # options.add_argument('--headless')
+        options.add_argument('--headless')
         options.add_argument("--window-size=1920,1080") # 窗口大小设置
         options.add_argument("--start-maximized") # 窗口最大化
+        options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        options.add_experimental_option('useAutomationExtension', False)
         # 添加 useragent
         chrome_ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'  
         options.add_argument(f'user-agent={chrome_ua}')
@@ -189,7 +202,7 @@ if __name__ == '__main__':
         firefox_ua = 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0'
         options.add_argument(f'user-agent={firefox_ua}')
         options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
-        browser = webdriver.Firefox(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\geckodriver.exe'), options=options) # 生成 browser
+        browser = webdriver.Firefox(service=f_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\geckodriver.exe'), options=options) # 生成 browser
     
     wait = WebDriverWait(browser, 10)
     

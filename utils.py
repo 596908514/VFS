@@ -1,16 +1,15 @@
 import pandas as pd
 import csv
 from datetime import datetime
-
+import random
 
 def create_data():
     # 使用 Python open 方法打开文件进行写入，
     with open('data.csv', mode='w', encoding='utf-8') as example_file:
         writer = csv.writer(example_file, delimiter=',', quotechar='"', quoting =csv.QUOTE_MINIMAL)
         # 用 writerow 方法写入表头行
-        writer.writerow(['visa_center', 'appointment_type', 'visa_type', 'Earliest booking time'])
+        writer.writerow(['visa_center', 'appointment_type', 'visa_type', 'Earliest_booking_time'])
         # 用 writerow 方法写入数据行
-        writer.writerow( ['广州意大利签证申请中心', 'Schengen visa', 'Schengen visa GZ'])
         writer.writerow( ['Italy Visa Application Center, Jinan', '意大利签证申请', 'NORMAL JINAN'])
         writer.writerow( ['Italy Visa Application Center, Jinan', '意大利签证申请', 'VIP JINAN'])
         writer.writerow(['南京意大利签证申请中心', 'STANDARD NANJING', 'NANJING STANDARD'])
@@ -41,11 +40,22 @@ def log_msg(log, message):
 
 def update(rowindex, time):
     df = pd.read_csv('data.csv', encoding='utf-8')
-    df['Earliest booking time'].loc[rowindex] = time
+    df['Earliest_booking_time'].loc[rowindex] = time
     df.to_csv('data.csv', index=False, encoding='utf-8')
     
 
+def getrandom():
+    return random.randint(3, 6)
 
+
+
+def csv_to_html():
+    upload_path = 'data.csv'
+    df = pd.read_csv(upload_path, encoding="utf-8")
+    filename = "data.html"
+    with open(filename, 'w') as file_object:
+        file_object.write(df.to_html())
+    return "data.html"
 
 # 更新选择内容
-get_data_array('data.csv')
+a = 1
