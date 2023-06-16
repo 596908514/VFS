@@ -23,7 +23,7 @@ import random
 # ]   
 
 mail_list = get_mail_list()
-
+data_path = 'data\data.csv'
 def mail(to, message):
     mail_host = args.mail_host
     mail_sender = args.mail_id
@@ -75,11 +75,11 @@ def login(log, browser, wait):
     time.sleep(3)
     # 输入账号密码
     browser.find_element(By.ID, "mat-input-0").send_keys(args.vfs_account)
-    time.sleep(1)
+    time.sleep(getrandom()-2)
     browser.find_element(By.ID, "mat-input-1").send_keys(args.vfs_pw)
-    time.sleep(2)
+    time.sleep(getrandom()-2)
     browser.find_element(By.XPATH, "//button[@class='mat-focus-indicator btn mat-btn-lg btn-block btn-brand-orange mat-stroked-button mat-button-base ng-star-inserted']").click()
-    time.sleep(3)
+    time.sleep(getrandom())
     # browser.save_screenshot('2.png')
 
     # 检测是否 输入有误 或者 账户锁定
@@ -107,7 +107,7 @@ def appointment(log, browser, wait):
     wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@class='mat-focus-indicator btn mat-btn-lg btn-brand-orange d-none d-lg-inline-block position-absolute top-n3 right-0 z-index-999 mat-raised-button mat-button-base']"))).click()
     time.sleep(getrandom())
     
-    data_np = get_data_array('data.csv')
+    data_np = get_data_array(data_path)
     while True:
         for rowindex in np.arange(data_np.shape[0]):
             # 选择第一个选项
@@ -183,7 +183,7 @@ if __name__ == '__main__':
         # proxy = random.choice(proxy_arr)
         # print(proxy)
         # options.add_argument(proxy)
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         options.add_argument("--window-size=1920,1080") # 窗口大小设置
         options.add_argument("--start-maximized") # 窗口最大化
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -195,7 +195,7 @@ if __name__ == '__main__':
         browser = webdriver.Chrome(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\driver\chromedriver.exe'), options=options)
     elif args.browser == 'firefox':
         options = f_Options()
-        options.add_argument('--headless')
+        # options.add_argument('--headless')
         options.add_argument("--window-size=1920,1080") # 窗口大小设置
         options.add_argument("--start-maximized") # 窗口最大化
         # 添加 useragent
