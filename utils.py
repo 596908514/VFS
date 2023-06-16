@@ -50,12 +50,21 @@ def getrandom():
 
 
 def csv_to_html():
-    upload_path = 'data.csv'
+    upload_path = 'data\data.csv'
     df = pd.read_csv(upload_path, encoding="utf-8")
     filename = "data.html"
     with open(filename, 'w') as file_object:
         file_object.write(df.to_html())
     return "data.html"
 
+def get_mail_list():
+    mail_list=[] 
+    with open("data\data_mail.txt", 'r') as f:
+        for line in f:
+            mail_list.append(list(line.strip('\n').split(',')))
+    return mail_list
+
 # 更新选择内容
+mail_list = ['596908514@qq.com', '1340330258@qq.com', 'xuxiaolei2017@126.com', '873163327@qq.com',
+             'mm328@qq.com', '421175261@qq.com']
 a = 1

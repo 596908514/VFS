@@ -19,6 +19,7 @@
  2. 激活环境 ```conda activate vfsbot```
  3. git项目代码 ```git clone git@github.com:596908514/VFS.git```
  4. 在 vfsbot 环境内安装依赖包 ```pip install -r requirements.txt```
+ 5. 循环执行指令 ```for /l %a in (0,0,1) do python vfs_v1.py```
 
 ## 细节部分
 
