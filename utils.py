@@ -41,7 +41,7 @@ def log_msg(log, message):
 def update(rowindex, time):
     df = pd.read_csv('data\data.csv', encoding='utf-8')
     df['Earliest_booking_time'].loc[rowindex] = time
-    df.to_csv('data.csv', index=False, encoding='utf-8')
+    df.to_csv('data\data.csv', index=False, encoding='utf-8')
     
 
 def getrandom():

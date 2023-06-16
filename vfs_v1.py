@@ -93,7 +93,7 @@ def login(log, browser, wait):
         mail(to=args.sendtoerror, message='your account is locked!')
         return False
 
-    time.sleep(getrandom()+5)
+    time.sleep(getrandom()+3)
     return True
 
 
@@ -161,7 +161,7 @@ def appointment(log, browser, wait):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--browser', type=str, default='firefox') # 游览器
+    parser.add_argument('--browser', type=str, default='chrome') # 游览器
     parser.add_argument('--vfs_account', type=str, default='1340330258@qq.com') # vfs登陆账号
     parser.add_argument('--vfs_pw', type=str, default='Panyixi0824@') # vfs 登陆密码
     parser.add_argument('--mail_id', type=str, default='596908514@qq.com') # stmp邮箱
@@ -183,7 +183,7 @@ if __name__ == '__main__':
         # proxy = random.choice(proxy_arr)
         # print(proxy)
         # options.add_argument(proxy)
-        # options.add_argument('--headless')
+        options.add_argument('--headless')
         options.add_argument("--window-size=1920,1080") # 窗口大小设置
         options.add_argument("--start-maximized") # 窗口最大化
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
@@ -191,8 +191,8 @@ if __name__ == '__main__':
         # 添加 useragent
         chrome_ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'  
         options.add_argument(f'user-agent={chrome_ua}')
-        options.binary_location = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-        browser = webdriver.Chrome(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\driver\chromedriver.exe'), options=options)
+        options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+        browser = webdriver.Chrome(service=c_Service(r'chromedriver.exe'), options=options)
     elif args.browser == 'firefox':
         options = f_Options()
         # options.add_argument('--headless')
