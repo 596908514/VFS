@@ -1,23 +1,30 @@
-# VFS Appointment Bot
-The VFS Appointment Bot is a Python script that automates the process of checking for available visa appointment slots on the VFS website. 
-The script uses Selenium WebDriver to navigate the website and search for available appointments, and can be customized to check for appointments at specific VFS centers.
+# 使用教程(chrome + chromedriver + anaconda + python + selenium)
 
-## Motivation
-The VFS Appointment Bot was created to help individuals who were struggling to find available visa appointments on the VFS website. 
-I personally experienced this issue and decided to create a solution that would automate the appointment scheduling process 
-and improve chances of securing an appointment.
+## 安装 chrome
 
-## Features
-- Automated appointment searching: The script automatically navigates to the VFS website and searches for available appointments based on the user's preferences.
-- Customizable search criteria: Users can specify their preferred VFS center, appointment date range, and other search criteria to optimize their chances of finding available appointments.
-- Email notification: When an available appointment is found, the script sends an email to the subscribed mailing list, notifying users of the appointment details and allowing them to quickly reserve the appointment.
-- Logging of attempts: The script logs all attempts, including failed login attempts, in order to help identify issues and troubleshoot any problems that may arise.
-- Regular operation: The script runs regularly every 5 minutes in order to prevent being blocked from the website.
+安装chrome：[点击这里](https://www.google.com/chrome/)
+安装完成后，打开chrome要查看你的Chrome版本，在浏览器中输入chrome://version/
 
-## Getting Started
-To use the VFS Appointment Bot, follow these steps:
+## 安装 chromedriver
 
-- Install Python and Selenium WebDriver on your system.
-- Clone the repository to your local machine.
-- Run ```pip install selenium```
-- Run VFS-Bot.py to start the script.
+[点击这里](https://chromedriver.storage.googleapis.com/index.html)找到版本的chromedriver下载，windows 选择 **chromedriver_win32.zip**。下载完毕之后解压安装，建议将 chromedriver.exe 文件放置在代码目录下，方便引用
+
+## 安装 anaconda + python
+
+[详细知乎教程](https://zhuanlan.zhihu.com/p/32925500)
+
+## 下载代码安装环境
+
+ 1. 配置 conda 环境 ```conda create -n vfsbot python=3.8```
+ 2. 激活环境 ```conda activate vfsbot```
+ 3. git项目代码 ```git clone git@github.com:596908514/VFS.git```
+ 4. 在 vfsbot 环境内安装依赖包 ```pip install -r requirements.txt```
+
+## 细节部分
+
+修改 vfs_v1.py 中的 chrome 和 chromedriver 的文件位置
+
+```python
+options.binary_location = r'C:\Program Files\Google\Chrome\Application\chrome.exe'```
+browser = webdriver.Chrome(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\chromedriver.exe'), options=options)
+```

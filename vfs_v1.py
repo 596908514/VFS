@@ -22,7 +22,9 @@ import random
 #     '--proxy-server=180.121.151.62:30001',
 # ]   
 
-
+mail_list = ['596908514@qq.com', '1340330258@qq.com', 'xuxiaolei2017@126.com', '873163327@qq.com',
+             'mm328@qq.com', '421175261@qq.com']
+mail_done = ['mm328@qq.com', '421175261@qq.com']
 
 def mail(to, message):
     mail_host = args.mail_host
@@ -166,7 +168,7 @@ if __name__ == '__main__':
     parser.add_argument('--vfs_pw', type=str, default='Panyixi0824@') # vfs 登陆密码
     parser.add_argument('--mail_id', type=str, default='596908514@qq.com') # stmp邮箱
     parser.add_argument('--token', type=str, default='kgtfmommembqbfai') # stmp 密钥
-    parser.add_argument('--sendto', type=list, default=['596908514@qq.com', '1340330258@qq.com', 'mm328@qq.com', '421175261@qq.com'])
+    parser.add_argument('--sendto', type=list, default=mail_list)
     parser.add_argument('--sendtoerror', type=str, default='596908514@qq.com')
     parser.add_argument('--mail_host', type=str, default='smtp.qq.com')
     parser.add_argument('--port', type=int, default=587)
@@ -192,7 +194,7 @@ if __name__ == '__main__':
         chrome_ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'  
         options.add_argument(f'user-agent={chrome_ua}')
         options.binary_location = r'C:\Program Files\Google\Chrome\Application\chrome.exe'
-        browser = webdriver.Chrome(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\chromedriver.exe'), options=options)
+        browser = webdriver.Chrome(service=c_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\driver\chromedriver.exe'), options=options)
     elif args.browser == 'firefox':
         options = f_Options()
         # options.add_argument('--headless')
@@ -202,7 +204,7 @@ if __name__ == '__main__':
         firefox_ua = 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0'
         options.add_argument(f'user-agent={firefox_ua}')
         options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
-        browser = webdriver.Firefox(service=f_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\geckodriver.exe'), options=options) # 生成 browser
+        browser = webdriver.Firefox(service=f_Service(r'C:\Users\潘克豪\Desktop\vfs_appointment\driver\geckodriver.exe'), options=options) # 生成 browser
     
     wait = WebDriverWait(browser, 10)
     
