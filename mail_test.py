@@ -7,6 +7,8 @@ from email.mime.image import MIMEImage
 # 负责将多个对象集合起来
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
+import sys
+sys.path.append('.//')
 from utils import csv_to_html
 
 # SMTP服务器,这里使用163邮箱
@@ -16,7 +18,11 @@ mail_sender = "596908514@qq.com"
 # 邮箱授权码,注意这里不是邮箱密码,如何获取邮箱授权码,请看本文最后教程
 mail_license = "kgtfmommembqbfai"
 # 收件人邮箱，可以为多个收件人
+<<<<<<< HEAD:mail_test.py
 mail_receivers = ["596908514@qq.com", "xinli0514@gmail.com"]
+=======
+mail_receivers = ["596908514@qq.com", "919736062@qq.com"]
+>>>>>>> 29da00c2a5a4d4e2fa63f7a9d22a0636f2c5c339:mail/mail_test.py
 
 mm = MIMEMultipart('alternative')
 
