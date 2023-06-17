@@ -93,7 +93,7 @@ def login(log, browser, wait):
         mail(to=args.sendtoerror, message='your account is locked!')
         return False
 
-    time.sleep(getrandom()+5)
+    time.sleep(getrandom()+3)
     return True
 
 
@@ -114,41 +114,29 @@ def appointment(log, browser, wait):
             if browser.find_element(By.ID, 'mat-select-value-1').text != data_np[rowindex][0]:
                 browser.find_element(By.XPATH, "//mat-select[@id='mat-select-0']").click()
                 # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-0']"))).click()
-                time.sleep(1)
-                options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
-                for element in options:
-                    my_str = element.text
-                    if data_np[rowindex][0] == my_str:
-                        element.click()
-                        break           
+                # time.sleep(1)
+                options = browser.find_elements(By.XPATH, "//*[@id='mat-select-0-panel']/mat-option[contains(.,'{}')]".format(data_np[rowindex][0])) 
+                options[0].click()    
                 time.sleep(getrandom())
-            time.sleep(0.5)
+            time.sleep(getrandom()/3 + 1)
             # 选择第二个选项
             if browser.find_element(By.ID, 'mat-select-value-3').text != data_np[rowindex][1]:
                 browser.find_element(By.XPATH, "//mat-select[@id='mat-select-2']").click()
                 # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-2']"))).click() 
-                time.sleep(1)
-                options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
-                for element in options:
-                    my_str = element.text
-                    if data_np[rowindex][1] == my_str:
-                        element.click()
-                        break           
+                # time.sleep(1)
+                options = browser.find_elements(By.XPATH, "//*[@id='mat-select-2-panel']/mat-option[contains(.,'{}')]".format(data_np[rowindex][1])) 
+                options[0].click()    
                 time.sleep(getrandom())
-            time.sleep(0.5)
+            time.sleep(getrandom()/3 + 1)
             # 选择第三个选项
             if browser.find_element(By.ID, 'mat-select-value-5').text != data_np[rowindex][2]:
                 browser.find_element(By.XPATH, "//mat-select[@id='mat-select-4']").click()
                 # wait.until(EC.element_to_be_clickable((By.XPATH, "//mat-select[@id='mat-select-4']"))).click()
-                time.sleep(1)
-                options = browser.find_elements(By.CSS_SELECTOR, "mat-option")
-                for element in options:
-                    my_str = element.text
-                    if data_np[rowindex][2] == my_str:
-                        element.click()
-                        break
+                # time.sleep(1)
+                options = browser.find_elements(By.XPATH, "//*[@id='mat-select-4-panel']/mat-option[contains(.,'{}')]".format(data_np[rowindex][2])) 
+                options[0].click()    
                 time.sleep(getrandom())  
-            time.sleep(0.5)
+            time.sleep(getrandom()/3 + 1)
             # 判断有无可以预约时间，没有则继续循环
             text = browser.find_element(By.XPATH, "//div[@class='alert alert-info border-0 rounded-0']").text
             if text != data_np[rowindex][3]:
@@ -161,7 +149,7 @@ def appointment(log, browser, wait):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--browser', type=str, default='firefox') # 游览器
+    parser.add_argument('--browser', type=str, default='chrome') # 游览器
     parser.add_argument('--vfs_account', type=str, default='1340330258@qq.com') # vfs登陆账号
     parser.add_argument('--vfs_pw', type=str, default='Panyixi0824@') # vfs 登陆密码
     parser.add_argument('--mail_id', type=str, default='596908514@qq.com') # stmp邮箱

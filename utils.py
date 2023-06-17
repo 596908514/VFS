@@ -41,7 +41,7 @@ def log_msg(log, message):
 def update(rowindex, time):
     df = pd.read_csv('data\data.csv', encoding='utf-8')
     df['Earliest_booking_time'].loc[rowindex] = time
-    df.to_csv('data.csv', index=False, encoding='utf-8')
+    df.to_csv('data/data.csv', index=False, encoding='utf-8')
     
 
 def getrandom():
@@ -65,6 +65,3 @@ def get_mail_list():
     return mail_list
 
 # 更新选择内容
-mail_list = ['596908514@qq.com', '1340330258@qq.com', 'xuxiaolei2017@126.com', '873163327@qq.com',
-             'mm328@qq.com', '421175261@qq.com']
-a = 1
